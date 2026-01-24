@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>svgnest demo</title>
+    <style>
+      body { margin: 0; font-family: system-ui, sans-serif; background: #f0f2f5; color: #2f3542; }
+      #root { 
+        display: grid; 
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+        padding: 20px; 
+        box-sizing: border-box;
+      }
+      @media (min-width: 900px) {
+        #root {
+          grid-template-columns: 350px 1fr; 
+          height: 100vh; 
+          overflow: hidden;
+        }
+      }
+      .card { background: white; padding: 20px; border-radius: 8px; }
+      .header { margin: 0; padding: 0 0 20px 0; }
+      h3 { margin-top: 0; }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script src="/src/index.tsx" type="module"></script>
+  </body>
+</html>
